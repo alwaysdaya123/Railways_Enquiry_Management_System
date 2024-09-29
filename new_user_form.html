@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New User Registration</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('userlogin.png'); /* Ensure the image is in the same directory or adjust the path */
+            height: 100vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff; /* Default text color */
+            text-align: center; /* Center text */
+        }
+
+        form {
+            background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="date"] {
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            width: 80%; /* Width of the input fields */
+        }
+
+        input[type="submit"] {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: green;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: darkgreen;
+        }
+
+        a {
+            color: #fff; /* Link color */
+            text-decoration: none;
+            margin-top: 15px;
+            display: inline-block; /* Makes the link block-level */
+        }
+
+        a:hover {
+            text-decoration: underline; /* Underline effect on hover */
+        }
+    </style>
+</head>
+<body>
+    <form action="new_user_form.php" method="post">
+        <div>
+            <h2>Kindly enter your credentials!!!</h2>
+            <label for="password">Password:</label>
+            <input type="password" name="password" required><br>
+            <label for="emailid">E-mail ID:</label>
+            <input type="text" name="emailid" required><br>
+            <label for="mobileno">Mobile No.:</label>
+            <input type="text" name="mobileno" required><br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" name="dob" required><br>
+            <input type="submit" value="Save"><br>
+            <a href="index.htm">Home Page</a>
+        </div>
+    </form>
+</body>
+</html>
